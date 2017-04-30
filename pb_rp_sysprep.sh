@@ -46,6 +46,17 @@ colorscheme desert
 set background=dark
 EOF
 
+# Overclocking
+cat <<EOF >> /boot/config.txt
+
+#Overclock Settings
+#arm_freq=1350
+#gpu_freq=500
+#sdram_freq=500
+#over_voltage=5
+#v3d_freq=525
+EOF
+
 # create wifi-import-file # set ssid/pass in PiBakery
 touch /boot/wifikeyfile.txt
 
@@ -57,4 +68,16 @@ git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
+
+# Download es_theme_pigrrl
+#cd /etc/emulationstation/themes
+#git clone -q https://github.com/smartroad/es_theme_pigrrl.git
+
+# Install PiTFT (fbcp) Support
 cd
+curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh
+#sudo bash pitft-fbcp.sh
+
+# Installing Keypress (retrogame) support
+curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/retrogame.sh
+sudo bash retrogame.sh
