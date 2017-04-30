@@ -46,13 +46,16 @@ colorscheme desert
 set background=dark
 EOF
 
+# create wifi-import-file
+touch /boot/wifikeyfile.txt
+
 # Download es_theme_pigrrl
 #cd /etc/emulationstation/themes
 #git clone -q https://github.com/smartroad/es_theme_pigrrl.git
 
 # Install PiTFT (fbcp) Support
 cd
-#curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh
+curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/pitft-fbcp.sh
 #sudo bash pitft-fbcp.sh
 
 # Installing Keypress (retrogame) support
