@@ -1,5 +1,6 @@
 #!/bin/bash
 # PiBakery RetroPie Raspbian lite System Preparation
+# Hopefully we will not have to mess/alter 'locale' info
 
 # update system and install RetroPie required packages
 apt-get update -y && apt-get dist-upgrade -y
