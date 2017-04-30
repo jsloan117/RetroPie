@@ -3,7 +3,6 @@
 
 # install a few needed packages
 apt-get install vim -y
-apt-get remove vim.tiny -y
 
 # messaging off, setup a few aliases and default editors
 cat <<EOF >> /etc/bash.bashrc
@@ -62,9 +61,6 @@ curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scrip
 curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/retrogame.sh
 sudo bash retrogame.sh
 
-# Overclocking
-#cat <<EOF >> /boot/config.txt
-#
 ##Overclock Settings
 #arm_freq=1350
 #gpu_freq=500
