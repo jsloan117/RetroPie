@@ -47,7 +47,10 @@ set background=dark
 EOF
 
 # create wifi-import-file # set ssid/pass in PiBakery
-touch /boot/wifikeyfile.txt
+cat <<EOF >> /boot/wifikeyfile.txt
+ssid=""
+psk=""
+EOF
 
 # Clone RetroPie Repo
 cd
