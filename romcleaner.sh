@@ -32,7 +32,10 @@ rom_count=$(find $PWD -type f \( -iname "*\[o1\]*" -o -iname "*\[o2\]*" -o -inam
 -o -iname "*\(PD\)*" -o -iname "*\(F\)*" -o -iname "*\(FC\)*" -o -iname "*\(S\)*" -o -iname "*\(FN\)*" -o -iname "*\(G\)*" \
 -o -iname "*\(PAL\)*" -o -iname "*\(B\)*" -o -iname "*\[T-*" -o -iname "*\[T+*" -o -iname "*\[hI*" -o -iname "*.txt" -o -iname "*.log" \
 -o -iname "*kiosk demo*" -o -iname "*\(korea\)*" -o -iname "*\(europe\)*" -o -iname "*\(taiwan\)*" -o -iname "*\[BF\]*" \
--o -iname "*\(japan\)*" -o -iname "*\(E\)*" \) -exec ls -lh {} \; | wc -l)
+-o -iname "*\(japan\)*" -o -iname "*\(ave\)*" -o -iname "*\(menu\)*" -o -iname "*\(hes\)*" -o -iname "*\(tw\)*" -o -iname "*\(sachen*" \
+-o -iname "*\(D\)*" -o -iname "*conversion*" -o -name "*\(GBA*" -o -name "*\(MB*GBA\)*" -o -iname "*\(ch*" -o -iname "*\(GC\)*" \
+-o -iname "*BIOS*" -o -iname "*sample*" -o -iname "*volume*" -o -iname "*\(CT\)*" -o -iname "*\(El Destructo\)*" \
+-o -iname "*\(NG*" -o -iname "*\(joy van\)*" -o -iname "*\(MGC*" -o -iname "*\(E\)*" \) -exec ls -lh {} \; | wc -l)
 
 echo -e "\nTotal Garbage Roms: $rom_count \n"
 export rom_count
@@ -60,7 +63,10 @@ find $PWD -type f \( -iname "*\[o1\]*" -o -iname "*\[o2\]*" -o -iname "*\[o3\]*"
 -o -iname "*\(PD\)*" -o -iname "*\(F\)*" -o -iname "*\(FC\)*" -o -iname "*\(S\)*" -o -iname "*\(FN\)*" -o -iname "*\(G\)*" \
 -o -iname "*\(PAL\)*" -o -iname "*\(B\)*" -o -iname "*\[T-*" -o -iname "*\[T+*" -o -iname "*\[hI*" -o -iname "*.txt" -o -iname "*.log" \
 -o -iname "*kiosk demo*" -o -iname "*\(korea\)*" -o -iname "*\(europe\)*" -o -iname "*\(taiwan\)*" -o -iname "*\[BF\]*" \
--o -iname "*\(japan\)*" -o -iname "*\(E\)*" \) -exec ls -lh {} \;
+-o -iname "*\(japan\)*" -o -iname "*\(ave\)*" -o -iname "*\(menu\)*" -o -iname "*\(hes\)*" -o -iname "*\(tw\)*" -o -iname "*\(sachen*" \
+-o -iname "*\(D\)*" -o -iname "*conversion*" -o -name "*\(GBA*" -o -name "*\(MB*GBA\)*" -o -iname "*\(ch*" -o -iname "*\(GC\)*" \
+-o -iname "*BIOS*" -o -iname "*sample*" -o -iname "*volume*" -o -iname "*\(CT\)*" -o -iname "*\(El Destructo\)*" \
+-o -iname "*\(NG*" -o -iname "*\(joy van\)*" -o -iname "*\(MGC*" -o -iname "*\(E\)*" \) -exec ls -lh {} \;
 }
 
 cleanse_roms () {
@@ -85,7 +91,10 @@ find $PWD -type f \( -iname "*\[o1\]*" -o -iname "*\[o2\]*" -o -iname "*\[o3\]*"
 -o -iname "*\(PD\)*" -o -iname "*\(F\)*" -o -iname "*\(FC\)*" -o -iname "*\(S\)*" -o -iname "*\(FN\)*" -o -iname "*\(G\)*" \
 -o -iname "*\(PAL\)*" -o -iname "*\(B\)*" -o -iname "*\[T-*" -o -iname "*\[T+*" -o -iname "*\[hI*" -o -iname "*.txt" -o -iname "*.log" \
 -o -iname "*kiosk demo*" -o -iname "*\(korea\)*" -o -iname "*\(europe\)*" -o -iname "*\(taiwan\)*" -o -iname "*\[BF\]*" \
--o -iname "*\(japan\)*" -o -iname "*\(E\)*" \) -exec rm -fv {} \;
+-o -iname "*\(japan\)*" -o -iname "*\(ave\)*" -o -iname "*\(menu\)*" -o -iname "*\(hes\)*" -o -iname "*\(tw\)*" -o -iname "*\(sachen*" \
+-o -iname "*\(D\)*" -o -iname "*conversion*" -o -name "*\(GBA*" -o -name "*\(MB*GBA\)*" -o -iname "*\(ch*" -o -iname "*\(GC\)*" \
+-o -iname "*BIOS*" -o -iname "*sample*" -o -iname "*volume*" -o -iname "*\(CT\)*" -o -iname "*\(El Destructo\)*" \
+-o -iname "*\(NG*" -o -iname "*\(joy van\)*" -o -iname "*\(MGC*" -o -iname "*\(E\)*" \) -exec rm -fv {} \;
 }
 
 case $choice in
