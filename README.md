@@ -1,2 +1,2 @@
 # RetroPie
-RetroPie Installer S
+RetroPie Installer Scripts
