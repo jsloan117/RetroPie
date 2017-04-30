@@ -61,10 +61,13 @@ curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scrip
 curl -sO https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/retrogame.sh
 sudo bash retrogame.sh
 
-##Overclock Settings
+# Overclocking
+cat <<EOF >> /boot/config.txt
+
+#Overclock Settings
 #arm_freq=1350
 #gpu_freq=500
 #sdram_freq=500
 #over_voltage=5
 #v3d_freq=525
-#EOF
+EOF
