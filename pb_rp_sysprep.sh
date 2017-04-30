@@ -52,6 +52,9 @@ touch /boot/wifikeyfile.txt
 # Clone RetroPie Repo
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+
+# execute retropie_setup script
 cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
+cd
