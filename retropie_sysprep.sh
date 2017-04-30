@@ -2,8 +2,8 @@
 # RetroPie Fine Tuning Script
 
 # install a few needed packages
-#apt-get install vim -y
-#apt-get remove vim.tiny -y
+apt-get install vim -y
+apt-get remove vim.tiny -y
 
 # messaging off, setup a few aliases and default editors
 cat <<EOF >> /etc/bash.bashrc
