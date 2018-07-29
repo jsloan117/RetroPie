@@ -48,7 +48,7 @@ set background=dark
 EOF
 
 # Overclocking
-cat <<EOF >> /boot/config.txt
+cat <<'EOF' >> /boot/config.txt
 
 #Overclock Settings
 #arm_freq=1350
